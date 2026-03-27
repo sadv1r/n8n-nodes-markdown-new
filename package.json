@@ -1,0 +1,54 @@
+{
+	"name": "n8n-nodes-markdown-new",
+	"version": "0.2.0",
+	"description": "n8n node to convert URLs to Markdown using markdown.new",
+	"license": "MIT",
+	"homepage": "https://markdown.new",
+	"keywords": [
+		"n8n-community-node-package",
+		"markdown",
+		"html-to-markdown",
+		"url-to-markdown"
+	],
+	"author": {
+		"name": "sadv1r",
+		"email": "5000487+sadv1r@users.noreply.github.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/sadv1r/n8n-nodes-markdown-new.git"
+	},
+	"bugs": {
+		"url": "https://github.com/sadv1r/n8n-nodes-markdown-new/issues"
+	},
+	"scripts": {
+		"build": "n8n-node build",
+		"build:watch": "tsc --watch",
+		"dev": "n8n-node dev",
+		"lint": "n8n-node lint",
+		"lint:fix": "n8n-node lint --fix",
+		"release": "n8n-node release",
+		"prepublishOnly": "n8n-node prerelease"
+	},
+	"files": [
+		"dist"
+	],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"strict": true,
+		"credentials": [],
+		"nodes": [
+			"dist/nodes/MarkdownNew/MarkdownNew.node.js"
+		]
+	},
+	"devDependencies": {
+		"@n8n/node-cli": "*",
+		"eslint": "9.39.4",
+		"prettier": "3.8.1",
+		"release-it": "19.2.4",
+		"typescript": "5.9.3"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	}
+}
